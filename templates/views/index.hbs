@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
+    <title>Klima</title>
+  </head>
+  <body class="landing-background">
+    
+    <div class="container-fluid p-0" id="firstCont">
+      <div class="container">
+        {{>header}}
+        <div class="text-center" id="loader" style="min-height: 576px;">
+            <img src="./img/puff.svg" alt="loading" class="mt-5 mx-auto" style="height: 250px; weight: 250px;">
+        </div>
+        <div class="row mt-5 d-none"  id="havadurumu">
+          <div class="col-md-6 text-center ">
+            <div class="card showIcon text-center shadow" id="firstCard" style="width:50%; height:15rem">
+              <div class="m-auto">
+                <p class="titDeg" id="sicaklik" ><strong>25°</strong></p>
+                <p class="titDesc" id="ozet"><strong>Yagmurlu</strong></p>
+                
+              </div>
+            </div>
+            <div class="card showIcon mt-5 shadow details" style="width:70%;">
+              <div class="row my-3">
+                <div class="col-md-12">
+                  <p id="konum">City</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <p id="windSpeed">WindSpeed</p>
+                  <p id="pressure">Pressure</p>
+                  <p id="humidity">Humidity</p>
+                </div>
+                <div class="col-md-6">
+                    <p id="date">Date</p>
+                    <p id="day"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="text-right description "><strong>klimAPP ile hava tam istediğin gibi 🤗</strong></p>
+            <div class="mt-5">
+              <div class="input-group mb-3">
+                <input type="text" id="searchBox" class="form-control" placeholder="Lütfen bir şehir girin ex.Denizli" aria-label="City name" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-light" type="button" id="button-addon2">Ara</button>
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 text-right text-muted">~ Havadurumunu merak ettiğiniz şehrin adını yazarak arayabilirsiniz. ~ </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="./img/wavee.svg" viewBox="0 0 1440 320">
+        <path fill="#F8F8F8" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,181.3C384,203,480,245,576,234.7C672,224,768,160,864,144C960,128,1056,160,1152,176C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </svg>
+    </div>
+    <div class="container-fluid">
+      <div class="container newEra">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Daha fazla şehir 🏙️</h3>
+            <table class="table csTable table-borderless table-hover my-5">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Şehir</th>
+                  <th scope="col">Sıcaklık</th>
+                  <th scope="col">Nem</th>
+                </tr>
+              </thead>
+              <tbody id="listeler">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    {{>footer}}
+    
+    
+    <script src="/js/app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

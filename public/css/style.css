@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap');
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    color:#F8F8F8;
+    background-color:#F8F8F8;
+}
+#firstCont{
+    background: rgb(46,72,236);
+    background: linear-gradient(180deg, rgba(46,72,236,0.85) 0%, rgba(31,1,98,1) 100%),
+    url('https://wallpapersdsc.net/wp-content/uploads/2016/09/Pamukkale-HD-Wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+.showIcon{
+    background-position: center;
+    background-size: cover;
+}
+.celc{
+    font-size: 32px;
+}
+.transparent{
+    background-color: transparent;
+}
+.card{
+    background: rgb(68,23,184,0.2);
+    background-position: center;
+    background-size: cover;
+}
+.titDeg{
+    font-size: 72px;
+    text-shadow: 4px 4px #2E47EB;
+}
+.description{
+    font-size: 72px;
+    margin-bottom:0px;
+}
+.titDesc{
+    font-size: 20px;
+    opacity: .9;
+    text-shadow: 2px 2px #2E47EB;
+}
+.newEra{
+    color:#000100;
+}
+.details{
+    font-weight: bold;
+}
+@media (max-width: 768px) { 
+    .card{
+        margin: auto;
+    }
+ }
+
+.csTable{
+    background-color:rgb(68,23,184,0.2);
+}
+
