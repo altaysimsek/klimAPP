@@ -4,28 +4,27 @@
     <img alt="klima" src="./public/img/klimalogo.png" width="150" />
   </a>
 </p>
-<p align="center">Basitçe size hava durumunu gösterir.</p>
+<p align="center">Basically shows forecast to you</p>
 
 ---
-## 🔱Amacım
+## 🔱Purpose
 
-Bu proje geliştirdiğim ilk express projesi diyebilirim , bu projeyi yaparak basitçe internette ulaşabildiğim ücretsiz API leri nasıl kullanabileceğimi ve nasıl kullanmam gerektiğini basitçe öğrenmiş oldum . Adres çubuğundaki query ve parametlere nasıl erişeceğimi ve buradaki değişimlere göre nasıl aksiyon alacağımı ilk bu proje ile deneyimledim.
+I can say this project is the first express project I have developed. By doing this project, I simply learned how to use and how to use free APIs that i can access on the internet. I experienced how to access the queries and parameters in the address bar and how to take action according to the changes in this project.
 
-**Bu projenin son halinin reposu değil!**
+**This is not the final version of the project!**
 
 
-Bu projeyi yaparken aynı zamanda **git**'i kullanmayı ve ./node_modules veya saklamam gereken dosyaları(API tokenlar gibi) nasıl saklamam gerektiği ile ilgili temel bilgileri öğrendim.İlk yaptığım sırada bunları tam bilmediğim için farklı bi repoda yayına almıştım fakat o repo gizli durumda.
+While doing this project, I also learned to use **git** and the basics of how to hide ./node_modules or files I need to store (such as API tokens).When I did it for the first time, I did not know them exactly, so I published them in a different repo, but that repo is hidden.
 
-## 🦄 Çalıştırmak için
-Projeyi kullanmak için , önce klonlayıp **darkSky** ve **mapBox** üzerinden api token'i aldıktan sonra
-**src/utils/key.js** dosyasında ki değişkenleri değiştirmeniz yeterli.
+## 🦄 Run
+For use this project , firstly you need to clone this repo then get api tokens from **darkSky** and **mapBox** .After that you need to paste your tokens to **src/utils/key.js** and now you can run your server.
  
 
 	const  darkSkyKey  =  '<your api key>'
-    const  mapBoxKey  =  '<your api key>'
-    module.exports  =  {darkSkyKey,mapBoxKey}
+    	const  mapBoxKey  =  '<your api key>'
+    	module.exports  =  {darkSkyKey,mapBoxKey}
 
-Server'ı başlatmak için ;
+To start server ;
 
 	node src/app.js
 
